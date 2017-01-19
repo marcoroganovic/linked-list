@@ -1,0 +1,178 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input:focus {
+  border: 2px solid #bbb;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-form,
+.links {
+  height: 100vh;
+}
+
+.logo-form {
+  overflow: hidden;
+}
+
+.links {
+  overflow: auto;
+}
+
+.logo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  background: #455a64;
+}
+
+.logo {
+  display: block;
+  margin-top: 150px;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.new-link {
+  font-size: 16px;
+  margin-bottom: 150px;
+}
+
+.new-link input {
+  display: block;
+  width: 310px;
+  margin: 30px 0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.input-button {
+  width: 310px;
+  padding: 10px;
+  border: none;
+  background: #ffc107;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input-button:hover {
+  background: #ffd773;
+  transition: background 0.5s linear;
+  cursor: pointer;
+}
+
+.links {
+  width: 50%;
+  padding: 30px;
+  background: #cfd8dc;
+}
+
+.links > span {
+  display: block;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.bookmark {
+  padding: 5px 25px;
+  margin-bottom: 25px;
+  background: white;
+  border: 2px solid #607d8b;
+}
+
+.bookmark h2 {
+  color: #455a64;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.bookmark a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.bookmark a,
+.bookmark-buttons a {
+  color: #607d8b;
+  border-bottom: 2px solid #f2f4f4;s
+}
+
+.bookmark a:hover,
+.bookmark-buttons a:hover {
+  border-color: #ffc107;
+}
+
+.bookmark-buttons {
+  padding: 10px 0;
+  clear: both;
+  overflow: hidden;
+  border-top: 1px solid #cfd8dc;
+}
+
+.bookmark-buttons a {
+  display: inline-block;
+  color: #607d8b;
+}
+
+.bookmark-buttons a:first-child {
+  float: left;
+}
+
+.bookmark-buttons a:last-child {
+  float: right;
+}
+
+span.read {
+  color: tomato;
+}
+
+span.read:hover {
+  cursor: not-allowed;
+}
+
+@media(max-width: 720px) {
+  
+  .container {
+    flex-direction: column;
+  }
+
+  .logo-form {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .links {
+    width: 100%;
+    min-height: 55vh;
+    height: auto;
+  }
+}
