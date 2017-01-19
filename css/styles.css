@@ -35,6 +35,15 @@ input:focus {
   overflow: hidden;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+
 .links {
   overflow: auto;
 }
@@ -50,7 +59,7 @@ input:focus {
 
 .logo {
   display: block;
-  margin-top: 150px;
+  margin-top: 15%;
   font-size: 42px;
   font-weight: 800;
 }
@@ -61,13 +70,12 @@ input:focus {
 
 .new-link {
   font-size: 16px;
-  margin-bottom: 150px;
 }
 
 .new-link input {
   display: block;
   width: 310px;
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 10px;
   font-size: 15px;
 }
@@ -168,6 +176,9 @@ span.read:hover {
   .logo-form {
     width: 100%;
     height: 50vh;
+  }
+
+  .content {
   }
 
   .links {
